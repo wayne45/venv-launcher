@@ -22,8 +22,10 @@ The first run creates `.venv/`, upgrades pip, and installs `requirements.txt`. S
 ## Use a specific Python version
 
 ```bash
-PYTHON=python3.12 ./venv.sh python --version
+PYTHON=/opt/homebrew/opt/python@3.12/bin/python3.12 ./venv.sh python --version
 ```
+
+Use the full path to avoid picking up non-Homebrew Pythons that may be on your `PATH`. Find yours with `brew --prefix python@3.12`.
 
 Set `PYTHON` on the first run (when the venv is created). After that the venv locks to that version — no prefix needed.
 
