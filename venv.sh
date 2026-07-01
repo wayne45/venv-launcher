@@ -28,5 +28,6 @@ else
 fi
 
 if [ $# -gt 0 ]; then
+    echo "$(date '+%Y-%m-%d %H:%M:%S') $*" >> "${SCRIPT_DIR}/venv.log"
     "$@"
 fi

@@ -42,6 +42,15 @@ Set `PYTHON` on the first run (when the venv is created). After that the venv lo
 ./venv.sh python my_script.py
 ```
 
+## Command log
+
+Every command run via `./venv.sh` is recorded in `venv.log` with a timestamp:
+
+```
+2026-07-01 14:30:00 python my_script.py
+2026-07-01 14:31:00 pip install requests
+```
+
 ## Reset
 
 ```bash
