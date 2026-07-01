@@ -19,6 +19,14 @@ Edit `requirements.txt`, then start using it.
 
 The first run creates `.venv/`, upgrades pip, and installs `requirements.txt`. Subsequent runs skip setup and execute immediately.
 
+## Use a specific Python version
+
+```bash
+PYTHON=python3.12 ./venv.sh python --version
+```
+
+Set `PYTHON` on the first run (when the venv is created). After that the venv locks to that version — no prefix needed.
+
 ## Examples
 
 ```bash
